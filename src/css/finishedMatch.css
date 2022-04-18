@@ -1,0 +1,61 @@
+.viewFinishedMatchList {
+    position: relative;
+    left: 20%;
+    min-height: 750px;
+}
+
+.matches.list {
+    position: relative;
+    min-height: 900px;
+
+}
+
+.viewFinishedMatchList h2, .matches.list h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.matches.list h3 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.viewFinishedMatchList .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.viewFinishedMatchList .form .oneTournament .matchInfo, .matches.list .matchInfo {
+    border: 2px solid #FF9900;
+    width: 1100px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.viewFinishedMatchList .form .oneTournament .matchInfo .head, .matches.list .matchInfo .head p {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.viewFinishedMatchList .form .oneTournament .matchInfo .middle1, .matches.list .matchInfo .middle1 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.viewFinishedMatchList .form .oneTournament .matchInfo .listOfTeams, .matches.list .matchInfo .listOfTeams {
+    display: flex;
+}
+
+.viewFinishedMatchList .form .oneTournament .matchInfo .listOfTeams .team, .matches.list .matchInfo .listOfTeams .team {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+.viewFinishedMatchList .form .oneTournament .matchInfo .listOfTeamRanks .teamRank {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 450;
+}

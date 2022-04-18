@@ -1,0 +1,34 @@
+.joinedTournament {
+    text-align: center;
+    padding-top: 100px;
+    height: 650px;
+}
+
+.joinedTournament h2 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.joinedTournament .form h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.joinedTournament .form p {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+.joinedTournament .form .submit {
+    font-size: 30px;
+    text-align: center;
+    color: #FF9900;
+    line-height: 33px;
+    border: 3px solid #FF9900;
+    border-radius: 3px;
+    background-color: white;
+    margin-top: 30px;
+    padding: 10px;
+    width: 450px;
+}

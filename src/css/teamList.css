@@ -1,0 +1,60 @@
+.teamList {
+    position: relative;
+    min-height: 750px;
+    margin-top: 50px;
+}
+
+.teamList h2 {
+    position: relative;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 67px;
+    text-align: left;
+}
+
+.teamList .hint {
+    position: relative;
+    left: 10%;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 67px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.teamList .lists {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.teamList .oneTeamLeader .teamInfo {
+    position: relative;
+    left: 20%;
+    border: 2px solid #FF9900;
+    width: 1100px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.teamList .oneTeamLeader .teamInfo .head h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.teamList .oneTeamLeader .teamInfo .head h5 {
+    font-size: 20px;
+    font-weight: 250;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.teamList .oneTeamLeader .teamInfo .head h6 {
+    font-size: 17px;
+    font-weight: 200;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+

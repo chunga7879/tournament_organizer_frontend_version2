@@ -1,0 +1,72 @@
+.TournamentList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 0.4em;
+    margin: 0 0.5em;
+}
+
+.TournamentList > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4em;
+    width: max-content;
+    max-width: 50ch;
+    max-height: 60vh;
+    overflow-y: scroll;
+    border: 0.1em solid var(--accent);
+    border-radius: 0.5em;
+    padding: 0.2em 0.5em 0.5em;
+}
+
+.TournamentList > div > h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.TournamentList > div > h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.TournamentList > div > div {
+    gap: 0.4em;
+    width: auto;
+}
+
+.TournamentList > div > div > h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.TournamentList > div > p {
+    margin: 0;
+    font-size: 1em;
+    white-space: pre-wrap;
+}
+
+.TournamentList > div > span {
+    flex-grow: 1;
+    display: grid;
+    justify-items: start;
+    align-items: end;
+}
+
+.TournamentList > div > span > button {
+    display: grid;
+    place-content: center;
+    width: max-content;
+    height: 2em;
+    border: 0.1em solid var(--accent);
+    border-radius: 0.5em;
+}
+
+.TournamentList > div > span > button.disabled {
+    cursor: not-allowed;
+    color: gray;
+    border-color: gray;
+}
+
+/*# sourceMappingURL=TournamentList.css.map */

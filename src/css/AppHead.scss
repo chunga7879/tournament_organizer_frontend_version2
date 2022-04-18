@@ -1,0 +1,341 @@
+@media (min-width: 700px) {
+  .AppHead {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    margin: 0.5em;
+    padding: 0.5em;
+
+    border: 0.1em solid var(--accent);
+    border-radius: 0.5em;
+
+    > div:first-of-type {
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+
+      > a > img {
+        width: 6em;
+        height: 6em;
+
+        margin-right: -0.5em;
+      }
+
+      > a:last-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        color: black;
+        text-decoration: none;
+        font-size: 1.5em;
+        letter-spacing: -0.03em;
+
+        > span:first-of-type {
+          margin-bottom: -0.5em;
+        }
+      }
+
+      &:hover > a:last-of-type {
+        color: var(--accent);
+      }
+
+      > label {
+        display: none;
+      }
+    }
+
+    > input {
+      display: none;
+    }
+
+    > ul {
+      flex-grow: 1;
+      flex-shrink: 1;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      gap: 0.4em;
+
+      list-style: none;
+      font-size: min(2vw, 1em);
+      margin: 0;
+      padding: 0;
+
+      > li {
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+
+        padding: 0 0.4em;
+
+        > a {
+          color: black;
+          text-decoration: none;
+
+          &:hover {
+            color: var(--accent);
+          }
+        }
+      }
+    }
+
+    > div:last-of-type {
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      display: grid;
+      place-items: center;
+      position: relative;
+
+      font-size: 1.2em;
+      min-width: 20ch;
+      height: 3em;
+
+      > div {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.4em;
+
+        width: 100%;
+        height: 100%;
+        padding: 0 0.5em;
+
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+
+        > span {
+          transform: translateY(0.08em);
+        }
+
+        > img {
+          display: grid;
+          place-items: center;
+
+          width: 2em;
+          height: 2em;
+
+          border: 0.1em solid var(--accent);
+          border-radius: 100vw;
+        }
+      }
+
+      > ul {
+        display: none;
+        flex-direction: column;
+        gap: 0.2em;
+
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        top: calc(100% - 1em);
+        padding: 1.5em 0.5em 0.5em;
+        margin: 0;
+
+        border: 0.1em solid var(--accent);
+        border-top-style: none;
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+
+        list-style: none;
+        font-size: 0.9em;
+        background: white;
+
+        > li > button {
+          padding: 0 0.4em;
+          border: 0.1em solid var(--accent);
+          border-radius: 0.5em;
+        }
+      }
+
+      &:hover > ul {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .AppHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0.5em;
+    padding: 0.5em;
+
+    border: 0.1em solid var(--accent);
+    border-radius: 0.5em;
+
+    > div:first-of-type {
+      display: flex;
+      width: 100%;
+
+      color: black;
+      text-decoration: none;
+
+      > a > img {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 3em;
+
+        width: 3em;
+        height: 3em;
+      }
+
+      > a:last-of-type {
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4em;
+
+        color: black;
+        text-decoration: none;
+
+        > span {
+          font-size: min(5.7vw, 1.5em);
+          letter-spacing: -0.03em;
+        }
+      }
+
+      > a:hover, > a:hover + a {
+        color: var(--accent);
+      }
+
+      > label {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 3em;
+
+        display: grid;
+        place-items: center;
+
+        cursor: pointer;
+
+        > div {
+          position: relative;
+
+          width: 2em;
+          height: 2em;
+
+          border: 0.1em solid var(--accent);
+          border-radius: 0.5em;
+
+          &::before, > div, &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            display: block;
+            width: 70%;
+            height: 0.1em;
+
+            background: var(--accent);
+            border-radius: 100vw;
+          }
+
+          &::before {
+            top: calc(100% / 3 - 0.1em);
+          }
+
+          > div {
+            top: calc(100% / 2);
+          }
+
+          &::after {
+            top: calc(200% / 3 + 0.1em);
+          }
+        }
+      }
+    }
+
+    > input {
+      display: none;
+
+      &:checked {
+        + ul {
+          display: flex;
+        }
+
+        + ul + div {
+          display: flex;
+        }
+      }
+    }
+
+    > ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+
+      align-items: flex-start;
+      justify-content: space-around;
+      gap: 0.4em;
+
+      list-style: none;
+      font-size: 1.2em;
+      margin: 0.5em 0 0;
+      padding: 0;
+
+      > li {
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+
+        padding: 0 0.4em;
+
+        > a {
+          color: black;
+          text-decoration: none;
+
+          &:hover {
+            color: var(--accent);
+          }
+        }
+      }
+    }
+
+    > div:last-of-type {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+
+      > ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        align-items: flex-start;
+        justify-content: space-around;
+        gap: 0.4em;
+
+        list-style: none;
+        font-size: 1.2em;
+        margin: 0.4em 0 0;
+        padding: 0;
+
+        > li > button {
+          border: 0.1em solid var(--accent);
+          border-radius: 0.5em;
+
+          padding: 0 0.4em;
+        }
+      }
+
+      > div {
+        display: none;
+      }
+    }
+  }
+}

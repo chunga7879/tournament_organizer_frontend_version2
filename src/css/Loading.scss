@@ -1,0 +1,46 @@
+.Loading {
+  position: fixed;
+  z-index: 200;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: grid;
+  place-items: center;
+
+  font-size: 3em;
+  color: white;
+
+  background: rgba(255, 153, 0, 0.8);
+
+  > div > span {
+    --length: 1s;
+    animation: Loading var(--length) infinite alternate ease-in-out;
+
+    &:nth-of-type(1) {
+      animation-play-state: paused;
+
+    }
+
+    &:nth-of-type(2) {
+      animation-delay: calc(0 * (var(--length) / 3));
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: calc(1 * (var(--length) / 3));
+    }
+
+    &:nth-of-type(4) {
+      animation-delay: calc(2 * (var(--length) / 3));
+    }
+  }
+}
+
+@keyframes Loading {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

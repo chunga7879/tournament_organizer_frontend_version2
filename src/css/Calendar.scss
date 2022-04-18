@@ -1,0 +1,73 @@
+.Calendar {
+  display: grid;
+  justify-content: center;
+  overflow-x: scroll;
+
+  grid-template-columns: clamp(20ch, 90%, 150ch);
+  grid-template-rows: clamp(70ch, 75vh, 150ch);
+
+  margin: 1em 0;
+
+  .fc-icon {
+    display: grid;
+    place-content: center;
+  }
+
+  .fc-button.fc-button.fc-button {
+    z-index: unset;
+
+    background: transparent;
+    border: 0.1em solid var(--accent);
+    color: black;
+
+    &:hover, &:active {
+      z-index: unset;
+
+      background: transparent;
+      border: 0.1em solid var(--accent);
+      color: var(--accent);
+    }
+
+    &:focus {
+      box-shadow: unset;
+    }
+  }
+
+  .fc-toolbar-title {
+    font-size: min(5vw, 1.75em);
+  }
+
+  .fc-event {
+    background-color: var(--accent);
+    border: 0.1em solid black;
+    padding: 0 0.15em;
+    cursor: pointer;
+
+    color: white;
+    overflow: hidden;
+
+    &:hover {
+      box-shadow: 0 0 0 0.2em #F33F6C;
+    }
+  }
+}
+
+.CalendarTopLevel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+  > h1 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  > p {
+    margin: 0;
+    white-space: pre-wrap;
+  }
+
+  > div:first-of-type {
+    gap: 0.4em;
+  }
+}

@@ -1,0 +1,71 @@
+.JoinTournament {
+  > div > .JoinTeam > div:last-of-type {
+    > div > p {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.2em;
+    }
+  }
+
+  > div > div > .Calendar {
+    .fc-event::after {
+      display: none;
+    }
+
+    .fc-event-time::after {
+      display: none;
+    }
+
+    .fc-event {
+      background: rgb(255, 224, 179);
+
+      > .fc-event-main {
+        color: black;
+      }
+
+      &.selected {
+        background: var(--accent);
+
+        > .fc-event-main {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .JoinTournament {
+    > div > div > .Calendar {
+
+    }
+  }
+}
+
+.JoinTournamentTopLevel {
+  > h1 {
+    font-size: 1.5em;
+    margin: 0 0 0.5em;
+  }
+
+  > form {
+    align-items: center;
+    gap: 0.5em;
+
+    font-size: min(4vw, 1em);
+
+    > input {
+      outline: none;
+      border: 0.1em solid var(--accent);
+      border-radius: 0.5em;
+    }
+
+    > .submit {
+      grid-column: 1 / span 3;
+      justify-self: center;
+
+      width: 10ch;
+      text-align: center;
+    }
+  }
+}

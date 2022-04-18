@@ -1,0 +1,9 @@
+.ViewSchedules > div > .Calendar .fc-event {
+    cursor: auto;
+}
+
+.ViewSchedules > div > .Calendar .fc-event:hover {
+    box-shadow: unset;
+}
+
+/*# sourceMappingURL=ViewSchedules.css.map */

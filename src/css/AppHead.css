@@ -1,0 +1,306 @@
+@media (min-width: 700px) {
+    .AppHead {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        margin: 0.5em;
+        padding: 0.5em;
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+    }
+
+    .AppHead > div:first-of-type {
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .AppHead > div:first-of-type > a > img {
+        width: 6em;
+        height: 6em;
+        margin-right: -0.5em;
+    }
+
+    .AppHead > div:first-of-type > a:last-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: black;
+        text-decoration: none;
+        font-size: 1.5em;
+        letter-spacing: -0.03em;
+    }
+
+    .AppHead > div:first-of-type > a:last-of-type > span:first-of-type {
+        margin-bottom: -0.5em;
+    }
+
+    .AppHead > div:first-of-type:hover > a:last-of-type {
+        color: var(--accent);
+    }
+
+    .AppHead > div:first-of-type > label {
+        display: none;
+    }
+
+    .AppHead > input {
+        display: none;
+    }
+
+    .AppHead > ul {
+        flex-grow: 1;
+        flex-shrink: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.4em;
+        list-style: none;
+        font-size: min(2vw, 1em);
+        margin: 0;
+        padding: 0;
+    }
+
+    .AppHead > ul > li {
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+        padding: 0 0.4em;
+    }
+
+    .AppHead > ul > li > a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .AppHead > ul > li > a:hover {
+        color: var(--accent);
+    }
+
+    .AppHead > div:last-of-type {
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: grid;
+        place-items: center;
+        position: relative;
+        font-size: 1.2em;
+        min-width: 20ch;
+        height: 3em;
+    }
+
+    .AppHead > div:last-of-type > div {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.4em;
+        width: 100%;
+        height: 100%;
+        padding: 0 0.5em;
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+    }
+
+    .AppHead > div:last-of-type > div > span {
+        transform: translateY(0.08em);
+    }
+
+    .AppHead > div:last-of-type > div > img {
+        display: grid;
+        place-items: center;
+        width: 2em;
+        height: 2em;
+        border: 0.1em solid var(--accent);
+        border-radius: 100vw;
+    }
+
+    .AppHead > div:last-of-type > ul {
+        display: none;
+        flex-direction: column;
+        gap: 0.2em;
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        top: calc(100% - 1em);
+        padding: 1.5em 0.5em 0.5em;
+        margin: 0;
+        border: 0.1em solid var(--accent);
+        border-top-style: none;
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+        list-style: none;
+        font-size: 0.9em;
+        background: white;
+    }
+
+    .AppHead > div:last-of-type > ul > li > button {
+        padding: 0 0.4em;
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+    }
+
+    .AppHead > div:last-of-type:hover > ul {
+        display: flex;
+    }
+}
+
+@media (max-width: 700px) {
+    .AppHead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5em;
+        padding: 0.5em;
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+    }
+
+    .AppHead > div:first-of-type {
+        display: flex;
+        width: 100%;
+        color: black;
+        text-decoration: none;
+    }
+
+    .AppHead > div:first-of-type > a > img {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 3em;
+        width: 3em;
+        height: 3em;
+    }
+
+    .AppHead > div:first-of-type > a:last-of-type {
+        flex-grow: 1;
+        flex-shrink: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4em;
+        color: black;
+        text-decoration: none;
+    }
+
+    .AppHead > div:first-of-type > a:last-of-type > span {
+        font-size: min(5.7vw, 1.5em);
+        letter-spacing: -0.03em;
+    }
+
+    .AppHead > div:first-of-type > a:hover, .AppHead > div:first-of-type > a:hover + a {
+        color: var(--accent);
+    }
+
+    .AppHead > div:first-of-type > label {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 3em;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+    }
+
+    .AppHead > div:first-of-type > label > div {
+        position: relative;
+        width: 2em;
+        height: 2em;
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+    }
+
+    .AppHead > div:first-of-type > label > div::before, .AppHead > div:first-of-type > label > div > div, .AppHead > div:first-of-type > label > div::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 70%;
+        height: 0.1em;
+        background: var(--accent);
+        border-radius: 100vw;
+    }
+
+    .AppHead > div:first-of-type > label > div::before {
+        top: calc(33.3333333333% - 0.1em);
+    }
+
+    .AppHead > div:first-of-type > label > div > div {
+        top: 50%;
+    }
+
+    .AppHead > div:first-of-type > label > div::after {
+        top: calc(66.6666666667% + 0.1em);
+    }
+
+    .AppHead > input {
+        display: none;
+    }
+
+    .AppHead > input:checked + ul {
+        display: flex;
+    }
+
+    .AppHead > input:checked + ul + div {
+        display: flex;
+    }
+
+    .AppHead > ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-around;
+        gap: 0.4em;
+        list-style: none;
+        font-size: 1.2em;
+        margin: 0.5em 0 0;
+        padding: 0;
+    }
+
+    .AppHead > ul > li {
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+        padding: 0 0.4em;
+    }
+
+    .AppHead > ul > li > a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .AppHead > ul > li > a:hover {
+        color: var(--accent);
+    }
+
+    .AppHead > div:last-of-type {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .AppHead > div:last-of-type > ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-around;
+        gap: 0.4em;
+        list-style: none;
+        font-size: 1.2em;
+        margin: 0.4em 0 0;
+        padding: 0;
+    }
+
+    .AppHead > div:last-of-type > ul > li > button {
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+        padding: 0 0.4em;
+    }
+
+    .AppHead > div:last-of-type > div {
+        display: none;
+    }
+}
+
+/*# sourceMappingURL=AppHead.css.map */

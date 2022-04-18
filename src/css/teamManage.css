@@ -1,0 +1,60 @@
+.teamManage {
+    min-height: 700px;
+    margin-top: 50px;
+}
+
+.teamManage .availability.one {
+    position: relative;
+    text-align: center;
+    min-height: 300px;
+    margin-top: 100px;
+}
+
+.teamManage .availability.one .postAvailability h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.teamManage .availability.one .postAvailability .submit {
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+    color: #FF9900;
+    line-height: 33px;
+    border: 2px solid #FF9900;
+    border-radius: 3px;
+    background-color: white;
+    padding: 10px;
+    width: 500px;
+
+}
+
+.teamManage .availability.one .postAvailability .submit:hover {
+    background-color: #FF9900;
+    color: white;
+}
+
+.teamManage .availability.two {
+    position: relative;
+    left: 20%;
+    /*min-height: 300px;*/
+}
+
+.teamManage .availability.two .submitted {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.teamManage .availability.two .submitted .lists .timeslot .title {
+    font-size: 15px
+}
+
+.teamManage .availability.two .submitted .lists .timeslot p {
+    font-size: 10px;
+}
+
+.teamManage .acceptMatch {
+    position: relative;
+}
+
+

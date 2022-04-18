@@ -1,0 +1,76 @@
+.TournamentList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 0.4em;
+
+  margin: 0 0.5em;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4em;
+
+    width: max-content;
+    max-width: 50ch;
+    max-height: 60vh;
+    overflow-y: scroll;
+
+    border: 0.1em solid var(--accent);
+    border-radius: 0.5em;
+    padding: 0.2em 0.5em 0.5em;
+
+    > h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    > h2 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    > div {
+      gap: 0.4em;
+      width: auto;
+
+      > h3 {
+        margin: 0;
+        font-size: 1em;
+      }
+    }
+
+    > p {
+      margin: 0;
+      font-size: 1em;
+      white-space: pre-wrap;
+    }
+
+    > span {
+      flex-grow: 1;
+
+      display: grid;
+      justify-items: start;
+      align-items: end;
+
+      > button {
+        display: grid;
+        place-content: center;
+
+        width: max-content;
+        height: 2em;
+
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+
+        &.disabled {
+          cursor: not-allowed;
+          color: gray;
+          border-color: gray;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.Calendar {
+    display: grid;
+    justify-content: center;
+    overflow-x: scroll;
+    grid-template-columns: clamp(20ch, 90%, 150ch);
+    grid-template-rows: clamp(70ch, 75vh, 150ch);
+    margin: 1em 0;
+}
+
+.Calendar .fc-icon {
+    display: grid;
+    place-content: center;
+}
+
+.Calendar .fc-button.fc-button.fc-button {
+    z-index: unset;
+    background: transparent;
+    border: 0.1em solid var(--accent);
+    color: black;
+}
+
+.Calendar .fc-button.fc-button.fc-button:hover, .Calendar .fc-button.fc-button.fc-button:active {
+    z-index: unset;
+    background: transparent;
+    border: 0.1em solid var(--accent);
+    color: var(--accent);
+}
+
+.Calendar .fc-button.fc-button.fc-button:focus {
+    box-shadow: unset;
+}
+
+.Calendar .fc-toolbar-title {
+    font-size: min(5vw, 1.75em);
+}
+
+.Calendar .fc-event {
+    background-color: var(--accent);
+    border: 0.1em solid black;
+    padding: 0 0.15em;
+    cursor: pointer;
+    color: white;
+    overflow: hidden;
+}
+
+.Calendar .fc-event:hover {
+    box-shadow: 0 0 0 0.2em #F33F6C;
+}
+
+.CalendarTopLevel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.CalendarTopLevel > h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.CalendarTopLevel > p {
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.CalendarTopLevel > div:first-of-type {
+    gap: 0.4em;
+}
+
+/*# sourceMappingURL=Calendar.css.map */

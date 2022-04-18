@@ -1,0 +1,27 @@
+.ManageTeams > div > div > p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em;
+}
+
+.ManageTeamsTopLevel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.ManageTeamsTopLevel > h1 {
+  font-size: 1.2em;
+  margin: 0;
+}
+.ManageTeamsTopLevel > h2 {
+  font-size: 1em;
+  margin: 0;
+}
+.ManageTeamsTopLevel > button {
+  align-self: center;
+  width: 15ch;
+  border: 0.1em solid var(--accent);
+  border-radius: 0.5em;
+}
+
+/*# sourceMappingURL=ManageTeams.css.map */

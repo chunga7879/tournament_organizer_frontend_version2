@@ -1,0 +1,131 @@
+.recordMatch {
+    position: relative;
+    min-height: 750px;
+}
+
+
+.recordMatch h2 {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recordMatch h3 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.recordMatch .form {
+    position: relative;
+    left: 20%;
+}
+
+.recordMatch .form .oneTeam {
+    display: flex;
+}
+
+.recordMatch .form .oneTeam .teamInfo {
+    font-size: 40px;
+    border: 2px solid orange;
+    padding: 50px;
+    width: 750px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.recordMatch .form .oneTeam input {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+}
+
+.recordMatch .form .submit {
+    margin-top: 20px;
+    margin-left: 300px;
+    font-size: 30px;
+    text-align: center;
+    color: #FF9900;
+    line-height: 33px;
+    border: 2px solid #FF9900;
+    border-radius: 3px;
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+}
+
+.listRanks .validate {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #FF9900;
+    line-height: 33px;
+    border: 2px solid #FF9900;
+    border-radius: 3px;
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+}
+
+.listRanks .validate:hover {
+    background-color: #FF9900;
+    color: white;
+}
+
+.recordMatch .form .submit:hover {
+    background-color: #FF9900;
+    color: white;
+}
+
+.listRanks {
+    margin-top: 100px;
+    text-align: center;
+    min-height: 600px;
+}
+
+.listRanks h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 20px;
+
+}
+
+.listRanks .listOfTeamRanks {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    left: 20%;
+    text-align: center;
+    color: black;
+    line-height: 33px;
+    border: 2px solid #FF9900;
+    border-radius: 3px;
+    background-color: white;
+    width: 1000px;
+    padding: 20px;
+}
+
+.listRanks .listOfTeamRanks .teamRank {
+    margin-bottom: 20px;
+}
+
+.notReSult {
+    margin-top: 300px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    min-height: 600px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,146 @@
+.viewTournament, .deleteTournament, .deleteTournament.join {
+    position: relative;
+    min-height: 750px;
+    margin-top: 50px;
+}
+
+.deleteTournament.join .form .title {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.viewTournament h2 {
+    position: absolute;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 67px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.deleteTournament .form .title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 67px;
+    text-align: left;
+    margin-left: 300px;
+}
+
+
+.viewTournament .listTournaments {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.deleteTournament .form .listTournaments {
+    display: flex;
+    flex-direction: column;
+}
+
+.deleteTournament .form .listTournaments .oneTournament {
+    display: flex;
+}
+
+
+.deleteTournament .form .listTournaments .oneTournament .oneCheck button {
+    position: absolute;
+    left: 10%;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 70px;
+    transform: scale(2.5);
+    color: #FF9900;
+    border: 2px solid #FF9900;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.deleteTournament .form .listTournaments .oneTournament .oneCheck button:hover {
+    background-color: #FF9900;
+    color: white;
+}
+
+.viewTournament .oneTournament h3, .deleteTournament .form .oneTournament h3 {
+    position: relative;
+    left: 15%;
+    padding-top: 70px;
+    font-size: 30px;
+    font-weight: 450;
+}
+
+.viewTournament .oneTournament .tournamentInfo, .deleteTournament .form .oneTournament .tournamentInfo {
+    position: relative;
+    left: 20%;
+    border: 2px solid #FF9900;
+    width: 1100px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.deleteTournament .form .oneTournament .tournamentInfo {
+    margin-bottom: 30px;
+}
+
+.viewTournament .oneTournament .tournamentInfo .head, .deleteTournament .form .oneTournament .tournamentInfo .head {
+    display: flex;
+}
+
+.viewTournament .oneTournament .tournamentInfo .head h4, .deleteTournament .form .oneTournament .tournamentInfo .head h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.viewTournament .oneTournament .tournamentInfo .head h5, .deleteTournament .form .oneTournament .tournamentInfo .head h5 {
+    font-size: 20px;
+    font-weight: 250;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.viewTournament .oneTournament .tournamentInfo .middle1, .deleteTournament .form .oneTournament .tournamentInfo .middle1 {
+    font-size: 20px;
+    font-weight: 250;
+    margin-left: 20px;
+
+}
+
+.viewTournament .oneTournament .tournamentInfo .middle2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+.viewTournament .oneTournament .tournamentInfo .middle2 span {
+    font-weight: 300;
+}
+
+.viewTournament .oneTournament .tournamentInfo .middle3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.deleteTournament .form .submit {
+    font-size: 30px;
+    text-align: center;
+    color: #FF9900;
+    line-height: 33px;
+    border: 2px solid #FF9900;
+    border-radius: 3px;
+    background-color: white;
+    padding: 10px;
+    margin-left: 40%;
+    width: 340px;
+
+}
+
+.deleteTournament .form .submit:hover {
+    background-color: #FF9900;
+    color: white;
+}

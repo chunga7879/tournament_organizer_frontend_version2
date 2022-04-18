@@ -1,0 +1,14 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin: 0.5em;
+}
+
+.Footer > img {
+    width: 3em;
+    height: 3em;
+}
+
+/*# sourceMappingURL=Footer.css.map */

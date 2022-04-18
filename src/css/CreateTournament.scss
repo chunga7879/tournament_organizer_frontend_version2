@@ -1,0 +1,52 @@
+.CreateTournament {
+  > form {
+    align-items: center;
+    font-size: min(4vw, 1.2em);
+
+    padding: 1em;
+
+    *:invalid {
+      box-shadow: 0 0 0 0.2em #F33F6C;
+    }
+
+    > .submit {
+      grid-column: 1 / span 3;
+      justify-self: center;
+
+      width: 20ch;
+      text-align: center;
+    }
+
+    > input, > textarea, > select {
+      width: min(60vw, 40ch);
+      resize: none;
+
+      outline: none;
+      border: 0.1em solid var(--accent);
+      border-radius: 0.5em;
+    }
+
+    > .minMax {
+      display: flex;
+      align-items: center;
+      gap: 0.2em;
+
+      width: min(60vw, 40ch);
+
+      > label {
+        flex-shrink: 0;
+      }
+
+      > input {
+        flex-shrink: 1;
+        flex-grow: 1;
+
+        min-width: 5ch;
+
+        outline: none;
+        border: 0.1em solid var(--accent);
+        border-radius: 0.5em;
+      }
+    }
+  }
+}
